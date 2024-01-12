@@ -11,26 +11,58 @@
     <nav id="desktop-nav">
         <div class="logo">Nima Jokar</div>
         <div>
+            
             <ul class="nav-links">
                 <li>
-                    <a href="#about">About</a>
+                    <a href="#about" alt="Press to goto About section">About</a>
                 </li>
                 <li>
-                    <a href="#experience">Experience</a>
+                    <a href="#experience" alt="Press to goto Experience section">Experience</a>
                 </li>
                 <li>
-                    <a href="#projects">Projects</a>
+                    <a href="#projects" alt="Press to goto Projects section">Projects</a>
                 </li>
                 <li>
-                    <a href="#skills">Skills</a>
+                    <a href="#skills" alt="Press to goto Skills section">Skills</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact</a>
+                    <a href="#contact" alt="Press to goto Contact section">Contact</a>
                 </li>
+                
             </ul>
         </div>
 
     </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">Nima Jokar</div>
+        <div class="hamburger-menu"></div>
+        <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li>
+                <a href="#about" onclick="toggleMenu()" alt="Press to goto About section">About</a>
+            </li>
+            <li>
+                <a href="#experience" onclick="toggleMenu()" alt="Press to goto Experience section">Experience</a>
+            </li>
+            <li>
+                <a href="#projects" onclick="toggleMenu()" alt="Press to goto Projects section">Projects</a>
+            </li>
+            <li>
+                <a href="#skills" onclick="toggleMenu()" alt="Press to goto Skills section">Skills</a>
+            </li>
+            <li>
+                <a href="#contact" onclick="toggleMenu()" alt="Press to goto Contact section">Contact</a>
+            </li>
+            
+        </div>
+    </nav>
+
+
     <script src="script.js"></script>
 </body>
 </html>
