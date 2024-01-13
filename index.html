@@ -14,19 +14,13 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about" alt="Press to goto About section">About</a></li>
-          <li>
-            <a href="#experience" alt="Press to goto Experience section"
-              >Experience</a
-            >
-          </li>
+
           <li>
             <a href="#projects" alt="Press to goto Projects section"
               >Projects</a
             >
           </li>
-          <li>
-            <a href="#skills" alt="Press to goto Skills section">Skills</a>
-          </li>
+
           <li>
             <a href="#contact" alt="Press to goto Contact section">Contact</a>
           </li>
@@ -51,14 +45,7 @@
               >About</a
             >
           </li>
-          <li>
-            <a
-              href="#experience"
-              onclick="toggleMenu()"
-              alt="Press to goto Experience section"
-              >Experience</a
-            >
-          </li>
+
           <li>
             <a
               href="#projects"
@@ -67,14 +54,7 @@
               >Projects</a
             >
           </li>
-          <li>
-            <a
-              href="#skills"
-              onclick="toggleMenu()"
-              alt="Press to goto Skills section"
-              >Skills</a
-            >
-          </li>
+
           <li>
             <a
               href="#contact"
@@ -146,7 +126,7 @@
                 <p class="tab-links" onclick="opentab('education')">Education</p>
               </div>
 
-              <div class="tab-contents active-tab" id="experience">
+              <div class="tab-contents" id="experience">
                 <ul>
                   <li><span>Digital Forensic Analyst @ Computer Forensics Lab</span> - <span> 2023-Present</span><br>Digital/Computer Forensic Analyst Intern</li>
                   <li><span>Spectator Safety Steward @ Hotspur Stadium & Knights Group</span> - <span> 2020-Present</span><br>Event Day Steward</li>
@@ -154,11 +134,15 @@
                 </ul>
               </div>
               
-              <div class="tab-contents" id="skills">
+              <div class="tab-contents  active-tab" id="skills">
                 <ul>
-                  <li><span>UI/UX</span> - <span> 2020-2023</span><br>Designing Web/App Interfaces</li>
-                  <li><span>App dev</span> - <span> 2020-2023</span><br>Designing Web/App Interfaces</li>
-                  <li><span>whatever</span> - <span> 2020-2023</span><br>Designing Web/App Interfaces</li>
+                  <li><span>UI/UX | HTML, CSS, Tailwind, Git</span><br>Designing Web/App Interfaces with HTML and CSS</li>
+                  <li><span>Penetration Testing | Kali Linux, Metasploit </span><br>Conducting Penetration Tests using Kali Linux</li>
+                  <li><span>Front-End Development | React Native, Visual Studio Code, Git</span><br>Front-End Development with React Native & Expo</li>
+                  <li><span>Data Analysis | Oracle SQL, Python, PHP</span><br>Query, Update or Modify Databases using SQL & Python</li>
+                  <li><span>Information Security | Cybersecurity Concepts</span><br>NIST, CSF, and more Cybersecurity Frameworks</li>
+                  <li><span>Python | Python, PyCharm, Jupytr</span><br>Development using Python Language</li>
+                  <li><span>Computer Forensic | MOBILedit, FTK Imager, TinyCheck</span><br>Development using Python Language</li>
                 </ul>
               </div>
               <div class="tab-contents " id="education">
@@ -179,59 +163,13 @@
 
 
       </div>
-      <!-- <p class="section__text__p1">Learn Some More</p>
-      <h1 class="title">About Me</h1>
-    
-      <div class="about-container">
-        <div class="about-col-1">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-            reprehenderit et laborum, rem, dolore eum quod voluptate
-            exercitationem nobis, nihil esse debitis maxime facere minus sint
-            delectus velit in eos quo officiis explicabo deleniti dignissimos.
-            Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-            reiciendis ea magnam? Nulla, impedit fuga!
-          </p>
-        </div>
-    
-        <div class="about-col-2">
-          <div class="section-container">
-            <div class="section__pic-container">
-              <img src="./assets/BandW.png" alt="Profile picture" class="about-pic" />
-            </div>
-    
-            <div class="tab-titles">
-              <p class="tab-links">Education</p>
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Skills</p>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#experience'"
+        onclick="location.href='./#projects'"
       />
     </section>
-  
-
-  <!-- Experience Section -->
-  <section id="experience">
-    <p class="section__text__p1">Check Out My</p>
-    <h1 class="title">Experience</h1>
-    <div class="section-container">
-
-    </div>
-    <img
-      src="./assets/arrow.png"
-      alt="Arrow icon"
-      class="icon arrow"
-      onclick="location.href='./#projects'"
-    />
-  </section>
 
     <!-- Projects Section -->
     <section id="projects">
@@ -244,9 +182,42 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <p class="section__text__p1">Feel Free to</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="section-container">
+  
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
         onclick="location.href='./#skills'"
       />
     </section>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="script.js"></script>
   </body>
