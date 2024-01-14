@@ -275,7 +275,7 @@ section {
 
 .about-containers2 {
   gap: 2rem;
-  margin-bottom:1rem;
+  margin-bottom: 1rem;
   margin-top: 1rem;
 }
 
@@ -288,7 +288,6 @@ section {
   flex-direction: column;
 }
 
-
 .about-containers,
 .about-details-container {
   display: flex;
@@ -299,7 +298,6 @@ section {
 }
 .about-pic {
   border-radius: 2rem;
-  
 }
 
 .arrow {
@@ -351,7 +349,6 @@ section {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  
 }
 .article-container {
   display: flex;
@@ -403,7 +400,7 @@ article .icon {
 .project-h1 {
   font-size: 3rem;
   text-align: center;
-  padding: 0px 0px 0xp 0px
+  padding: 0px 0px 0xp 0px;
 }
 
 .project-col-1 {
@@ -412,7 +409,7 @@ article .icon {
 
 .project-subtitle-p1 {
   font-size: 20px;
-  padding: 0px 0px 0px 0px
+  padding: 0px 0px 0px 0px;
 }
 /* CONTACT */
 
@@ -465,7 +462,6 @@ footer p {
   text-align: center;
 }
 
-
 /* NEW STYLES FOR THE ABOUT SECTION */
 
 .row {
@@ -473,12 +469,6 @@ footer p {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-
-
-
-
-
-
 
 .about-container {
   display: flex;
@@ -506,26 +496,23 @@ footer p {
 }
 
 .tab-links {
-margin-right: 50px;
-font-size: 18px;
-font-weight: 500;
-cursor: pointer;
-position: relative;
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
 }
 
 .subtitle {
   font-size: 60px;
   font-weight: 600;
-  
 }
 .subtitle_p1 {
   font-size: 20px;
-  
-  
 }
 
 .tab-links::after {
-  content: '';
+  content: "";
   width: 0;
   height: 3px;
 
@@ -539,7 +526,7 @@ position: relative;
   text-decoration-color: rgb(181, 181, 181);
 }
 
-.tab-links.active-link::after{
+.tab-links.active-link::after {
   width: 100%;
 }
 
@@ -547,16 +534,48 @@ position: relative;
   list-style: none;
   margin: 10px 0;
 }
-.tab-contents ul li span{
-  color:brown;
-  font-size:14px ;
-  
+.tab-contents ul li span {
+  color: brown;
+  font-size: 14px;
 }
-.tab-contents{
+.tab-contents {
   display: none;
 }
 
-.tab-contents.active-tab{
+.tab-contents.active-tab {
   display: block;
 }
 
+/* Popup styles */
+.popup-container {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 7px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Project Sub  */
+.project-subtitle-h3 {
+  position: relative;
+
+  margin-top: -20px;
+  padding: 3%;
+  font-weight: 500;
+  color: blue;
+  font-size: 14px;
+  word-spacing: normal;
+  
+}

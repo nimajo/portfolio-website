@@ -17,3 +17,13 @@ function toggleMenu() {
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab")
   }
+
+  function showPopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'block';
+  }
+  
+  function closePopup() {
+    var popup = document.getElementById('popup');
+    popup.style.display = 'none';
+  }
