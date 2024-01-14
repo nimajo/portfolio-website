@@ -381,6 +381,20 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.project-h1 {
+  font-size: 3rem;
+  text-align: center;
+  padding: 0px 0px 0xp 0px
+}
+
+.project-col-1 {
+  flex: auto;
+}
+
+.project-subtitle-p1 {
+  font-size: 20px;
+  padding: 0px 0px 0px 0px
+}
 /* CONTACT */
 
 #contact {
