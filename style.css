@@ -273,16 +273,30 @@ section {
   margin-top: 2rem;
 }
 
+.about-containers2 {
+  gap: 2rem;
+  margin-bottom:1rem;
+  margin-top: 1rem;
+}
+
 .about-details-container {
   justify-content: center;
   flex-direction: column;
 }
+.about-details-container2 {
+  justify-content: center;
+  flex-direction: column;
+}
+
 
 .about-containers,
 .about-details-container {
   display: flex;
 }
-
+.about-containers2,
+.about-details-container2 {
+  display: flex;
+}
 .about-pic {
   border-radius: 2rem;
   
@@ -333,7 +347,12 @@ section {
   justify-content: center;
   flex-direction: column;
 }
-
+.experience-details-container2 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
 .article-container {
   display: flex;
   text-align: initial;
