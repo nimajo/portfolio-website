@@ -35,7 +35,7 @@ function toggleMenu() {
     // Initial title text
     var titles = [
       "BSc Computer Science Graduate",
-      "Digital Forensic Analyst Intern",
+      "Graduate Data Analyst",
     ];
   
     // Function to update the title text with typing effect
