@@ -1,63 +1,79 @@
+// ================= MENU TOGGLE =================
 function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
+  const menu = document.querySelector(".menu-links");
+  const icon = document.querySelector(".hamburger-icon");
+
+  if (menu && icon) {
     menu.classList.toggle("open");
     icon.classList.toggle("open");
   }
-  
-  var tablinks = document.getElementsByClassName("tab-links");
-  var tabcontents = document.getElementsByClassName("tab-contents");
-  function opentab(tabname) {
-    for(tablink of tablinks){
-      tablink.classList.remove("active-link");
-    }
-    for(tabcontent of tabcontents){
-      tabcontent.classList.remove("active-tab");
-    }
+}
+
+
+// ================= TABS =================
+const tablinks = document.getElementsByClassName("tab-links");
+const tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname, event) {
+
+  for (let tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+
+  for (let tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+
+  if (event) {
     event.currentTarget.classList.add("active-link");
-    document.getElementById(tabname).classList.add("active-tab")
   }
 
-  function showPopup() {
-    var popup = document.getElementById('popup');
-    popup.style.display = 'block';
+  const target = document.getElementById(tabname);
+  if (target) {
+    target.classList.add("active-tab");
   }
-  
-  function closePopup() {
-    var popup = document.getElementById('popup');
-    popup.style.display = 'none';
+}
+
+
+// ================= POPUP =================
+function showPopup() {
+  const popup = document.getElementById("popup");
+  if (popup) popup.style.display = "block";
+}
+
+function closePopup() {
+  const popup = document.getElementById("popup");
+  if (popup) popup.style.display = "none";
+}
+
+
+// ================= TITLE ANIMATION =================
+document.addEventListener("DOMContentLoaded", function () {
+
+  const titleElement = document.getElementById("title");
+  if (!titleElement) return;
+
+  const titles = [
+    "Experienced Data Analyst",
+    "First Class Computer Science Graduate",
+    "Tech Enthusiast",
+  ];
+
+  let index = 0;
+
+  function updateTitle() {
+    titleElement.textContent = titles[index];
+
+    titleElement.classList.add("typing-effect");
+
+    setTimeout(() => {
+      titleElement.classList.remove("typing-effect");
+    }, 3000);
+
+    index = (index + 1) % titles.length;
   }
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Get the element by ID
-    var titleElement = document.getElementById("title");
-  
-    // Initial title text
-    var titles = [
-      "BSc Computer Science Graduate",
-      "Digital Forensic Analyst Intern",
-    ];
-  
-    // Function to update the title text with typing effect
-    function updateTitle(index) {
-      titleElement.textContent = titles[index];
-      titleElement.classList.add("typing-effect");
-      setTimeout(function () {
-        titleElement.classList.remove("typing-effect");
-      }, 3000); // Adjust the duration based on your preference
-    }
-  
-    // Function to loop through the titles
-    function loopTitles() {
-      var index = 0;
-      updateTitle(index);
-      setInterval(function () {
-        index = (index + 1) % titles.length;
-        updateTitle(index);
-      }, 6000); // Adjust the interval based on your preference
-    }
-  
-    // Start the loop
-    loopTitles();
-  });
-  
+  updateTitle();
+  setInterval(updateTitle, 6000);
+
+});

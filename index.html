@@ -1,443 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nima's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  
-  <body>
-    <nav id="desktop-nav">
-      
-      <div class="logo">Nima Jokar</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about" alt="Press to goto About section">About</a></li>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nima Jokar | Portfolio</title>
 
-          <li>
-            <a href="#projects" alt="Press to goto Projects section"
-              >Projects</a
-            >
-          </li>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
 
-          <li>
-            <a href="#contact" alt="Press to goto Contact section">Contact</a>
-          </li>
-        </ul>
+<body>
+
+  <!-- ================= NAVIGATION ================= -->
+
+  <nav id="desktop-nav">
+    <div class="logo">Nima Jokar</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Nima Jokar</div>
+
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
       </div>
-    </nav>
 
-    <nav id="hamburger-nav">
-      <div class="logo">Nima Jokar</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li>
-            <a
-              href="#about"
-              onclick="toggleMenu()"
-              alt="Press to go to About section"
-              >About</a
-            >
-          </li>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
 
-          <li>
-            <a
-              href="#projects"
-              onclick="toggleMenu()"
-              alt="Press to goto Projects section"
-              >Projects</a
-            >
-          </li>
+  <!-- ================= PROFILE ================= -->
 
-          <li>
-            <a
-              href="#contact"
-              onclick="toggleMenu()"
-              alt="Press to goto Contact section"
-              >Contact</a
-            >
-          </li>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Profile Section -->
-    <section id="profile">
+  <section id="profile">
     <div class="section-container">
+
+      <!-- SVG BACKGROUND ANIMATION (UNCHANGED) -->
       <div>
-        <svg class="BgAnimation__svg" viewBox="0 0 602 602" fill="none" xmlns="http://www.w3.org/2000/svg"><g opacity="0.15"><path fill-rule="evenodd" clip-rule="evenodd" d="M201.337 87.437C193.474 79.5738 180.725 79.5738 172.862 87.437L87.437 172.862C79.5739 180.725 79.5739 193.474 87.437 201.337L400.663 514.563C408.526 522.426 421.275 522.426 429.138 514.563L514.563 429.138C522.426 421.275 522.426 408.526 514.563 400.663L201.337 87.437ZM30.4869 115.912C-8.82897 155.228 -8.82897 218.972 30.4869 258.287L343.713 571.513C383.028 610.829 446.772 610.829 486.088 571.513L571.513 486.088C610.829 446.772 610.829 383.028 571.513 343.713L258.287 30.4869C218.972 -8.82896 155.228 -8.82896 115.912 30.4869L30.4869 115.912Z" stroke="url(#paint0_radial)" id="path_0"></path><path d="M514.563 201.337C522.426 193.474 522.426 180.725 514.563 172.862L429.138 87.437C421.275 79.5738 408.526 79.5739 400.663 87.437L358.098 130.002L301.148 73.0516L343.713 30.4869C383.028 -8.82896 446.772 -8.82896 486.088 30.4869L571.513 115.912C610.829 155.228 610.829 218.972 571.513 258.287L357.802 471.999L300.852 415.049L514.563 201.337Z" stroke="url(#paint1_radial)" id="path_1"></path><path d="M243.901 471.999L201.337 514.563C193.474 522.426 180.725 522.426 172.862 514.563L87.437 429.138C79.5739 421.275 79.5739 408.526 87.437 400.663L301.148 186.952L244.198 130.002L30.4869 343.713C-8.82897 383.028 -8.82897 446.772 30.4869 486.088L115.912 571.513C155.228 610.829 218.972 610.829 258.287 571.513L300.852 528.949L243.901 471.999Z" stroke="url(#paint2_radial)" id="path_2"></path></g><ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306" ry="1.07433" fill="#945DD6"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></ellipse><path d="M294.685 193.474L268.932 219.258" transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)" stroke="url(#paint3_linear)"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></path><ellipse cx="295.027" cy="193.118" transform="translate(-295.027 -193.118)" rx="1.07306" ry="1.07433" fill="#46737"><animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></ellipse><path d="M294.685 193.474L268.932 219.258" transform="translate(-294.685 -193.474) rotate(45 294.685 193.474)" stroke="url(#paint7_linear)"><animateMotion dur="5s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_2"></mpath></animateMotion></path><ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306" transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#945DD6"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M476.171 362.952L450.417 337.168" transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)" stroke="url(#paint4_linear)"><animateMotion dur="10s" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><ellipse cx="382.164" cy="155.029" rx="1.07433" ry="1.07306" transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)" fill="#F46737"><animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M381.81 154.669L356.057 128.885" transform="translate(-381.81 -154.669) rotate(-45 381.81 154.669)" stroke="url(#paint5_linear)"><animateMotion dur="10s" begin="1" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><ellipse cx="333.324" cy="382.691" rx="1.07306" ry="1.07433" transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)" fill="#F46737"><animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_1"></mpath></animateMotion></ellipse><path d="M333.667 382.335L359.42 356.551" transform="scale(-1 1) translate(-333.667 -382.335) rotate(45 333.667 382.335)" stroke="url(#paint6_linear)"><animateMotion dur="5s" begin="0" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_1"></mpath></animateMotion></path><ellipse cx="165.524" cy="93.9596" rx="1.07306" ry="1.07433" transform="translate(-165.524 -93.9596)" fill="#F46737"><animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M165.182 94.3159L139.429 120.1" transform="translate(-165.182 -94.3159) rotate(45 165.182 94.3159)" stroke="url(#paint7_linear)"><animateMotion dur="10s" begin="3" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><ellipse cx="476.525" cy="363.313" rx="1.07433" ry="1.07306" transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)" fill="#13ADC7"><animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></ellipse><path d="M476.171 362.952L450.417 337.168" transform="translate(-476.525 -363.313) rotate(-45 476.171 362.952)" stroke="url(#paint11_linear)"><animateMotion dur="12s" begin="4" repeatCount="indefinite" rotate="auto"><mpath xlink:href="#path_0"></mpath></animateMotion></path><defs><radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)"><stop offset="0.333333" stop-color="#FBFBFB"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint1_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)"><stop offset="0.333333" stop-color="#FBFBFB"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><radialGradient id="paint2_radial" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(301 301) rotate(90) scale(300)"><stop offset="0.333333" stop-color="#FBFBFB"></stop><stop offset="1" stop-color="white" stop-opacity="0"></stop></radialGradient><linearGradient id="paint3_linear" x1="295.043" y1="193.116" x2="269.975" y2="218.154" gradientUnits="userSpaceOnUse"><stop stop-color="#945DD6"></stop><stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop></linearGradient><linearGradient id="paint4_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272" gradientUnits="userSpaceOnUse"><stop stop-color="#945DD6"></stop><stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop></linearGradient><linearGradient id="paint5_linear" x1="382.168" y1="155.027" x2="357.1" y2="129.989" gradientUnits="userSpaceOnUse"><stop stop-color="#F46737"></stop><stop offset="1" stop-color="#F46737" stop-opacity="0"></stop></linearGradient><linearGradient id="paint6_linear" x1="333.309" y1="382.693" x2="358.376" y2="357.655" gradientUnits="userSpaceOnUse"><stop stop-color="#F46737"></stop><stop offset="1" stop-color="#F46737" stop-opacity="0"></stop></linearGradient><linearGradient id="paint7_linear" x1="165.54" y1="93.9578" x2="140.472" y2="118.996" gradientUnits="userSpaceOnUse"><stop stop-color="#F46737"></stop><stop offset="1" stop-color="#F46737" stop-opacity="0"></stop></linearGradient><linearGradient id="paint8_linear" x1="414.367" y1="301.156" x2="439.435" y2="276.118" gradientUnits="userSpaceOnUse"><stop stop-color="#13ADC7"></stop><stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop></linearGradient><linearGradient id="paint9_linear" x1="515.943" y1="288.238" x2="541.339" y2="291.454" gradientUnits="userSpaceOnUse"><stop stop-color="#13ADC7"></stop><stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop></linearGradient><linearGradient id="paint10_linear" x1="117.001" y1="230.619" x2="117.36" y2="258.193" gradientUnits="userSpaceOnUse"><stop stop-color="#945DD6"></stop><stop offset="1" stop-color="#945DD6" stop-opacity="0"></stop></linearGradient><linearGradient id="paint11_linear" x1="476.529" y1="363.31" x2="451.461" y2="338.272" gradientUnits="userSpaceOnUse"><stop stop-color="#13ADC7"></stop><stop offset="1" stop-color="#13ADC7" stop-opacity="0"></stop></linearGradient></defs></svg>
+        <!-- KEEP YOUR ORIGINAL SVG HERE EXACTLY AS IT WAS -->
+        <!-- I removed it from this message only to keep things readable -->
       </div>
-    <div class="section__pic-container">
-      
-      <img
-        
-        src="./assets/HeadshotGradPic.png"
-        alt="Nima Jokar Profile Picture"
-      />
-      
+
+      <!-- Profile Image -->
+      <div class="section__pic-container">
+        <img 
+          src="./assets/HeadshotGradPic.png" 
+          alt="Portrait of Nima Jokar"
+        >
+      </div>
+
+      <!-- Profile Text -->
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nima Jokar</h1>
+
+        <!-- DO NOT REMOVE (Required for script.js animation) -->
+        <div id="title-container">
+          <p id="title" class="section__text__p2">
+            First Class Computer Science Graduate
+          </p>
+        </div>
+
+        <div class="btn-container">
+          <a href="#contact" class="btn btn-color-1">
+            Contact Info
+          </a>
+        </div>
+
+        <div id="socials-container">
+          <a href="https://www.linkedin.com/in/nima-jokar/" target="_blank" rel="noopener">
+            <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon">
+          </a>
+
+          <a href="https://github.com/nimajo" target="_blank" rel="noopener">
+            <img src="./assets/github.png" alt="GitHub profile" class="icon">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= ABOUT ================= -->
+
+  <section id="about">
+    <div class="section-container">
+      <div class="row">
+
+        <div class="about-col-1">
+          <img src="./assets/BandW.png" alt="Black and white portrait of Nima">
+        </div>
+
+        <div class="about-col-2">
+          <p class="subtitle_p1">Learn More</p>
+          <h2 class="subtitle">About Me</h2>
+
+          <p>
+            I'm Nima, a Computer Science graduate and an experienced Data Analyst.
+            with a 4.09 GPA and first class honours, I enjoy solving technical challenges and building meaningful solutions.
+          </p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+            <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+            <p class="tab-links" onclick="opentab('education', event)">Education</p>
+            <p class="tab-links" onclick="opentab('certifications', event)">Certifications & Courses</p>
+          </div>
+
+          <!-- Skills -->
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><strong>Data Analysis:</strong> SQL, Python, Power BI, Excel, Tableau, DAX</li>
+              <li><strong>Python:</strong> Jupyter, Pytest</li>
+              <li><strong>UI/UX:</strong> HTML, CSS, Tailwind, Git</li>
+              <li><strong>Penetration Testing:</strong> Kali Linux, Metasploit</li>
+              <li><strong>Front-End:</strong> React Native, Expo</li>
+              <li><strong>Information Security:</strong> NIST, CSF</li>
+              <li><strong>Computer Forensics:</strong> FTK Imager, MOBILedit</li>
+            </ul>
+          </div>
+
+          <!-- Experience -->
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><strong>Graduate Data Analyst</strong> (2024–2025)</li>
+              <li><strong>Spectator Safety Steward</strong> (2023–Present)</li>
+              <li><strong>Digital Forensic Analyst Intern</strong> (2024–2024)</li>
+              <li><strong>Event Day Steward</strong> (2020-2023)</li>
+              <li><strong>Freelance Web Developer</strong> (2017–2024)</li>
+              <li><strong>Sales Advisor</strong> (2019–2020)</li>
+            </ul>
+          </div>
+
+          <!-- Education -->
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><strong>BSc (Hons) Computer Science</strong> (2020–2023)</li>
+              <li><strong>3x A-Levels</strong> (2018–2020)</li>
+              <li><strong>10x GCSEs</strong> (2013–2018)</li>
+
+            </ul>
+          </div>
+          <!-- Experience -->
+          <div class="tab-contents" id="certifications">
+            <ul>
+             <li><strong>IBM Data Analyst Professional Certificate</strong> (2024)</li>
+             <li><strong>Azure Fundamentals Learning Path (AZ-900)</strong> (2026)</li>
+             <li><strong>AWS Cloud Practioner Essentials</strong> (2024)</li>
+             <li><strong>IBM DevOps Essentials</strong> (2024)</li>
+             <li><strong>Career Essentials in Cybersecurity by Microsoft and LinkedIn</strong> (2024)</li>
+             <li><strong>Security Operations Center (SOC)</strong> (2024)</li>
+             <li><strong>Google Foundations of Cybersecurity</strong> (2023)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="section__text">
-      <p class="section__text__p1">Hello, I'm</p>
-      <h1 class="title">Nima Jokar</h1>
-      <!-- Add an ID to the element you want to animate -->
-      <div id="title-container">
-        <p id="title" class="section__text__p2p">BSc Computer Science Graduate</p>
+    <img 
+      src="./assets/arrow.png" 
+      alt="Scroll to projects" 
+      class="icon arrow"
+      onclick="location.href='#projects'"
+    >
+  </section>
+
+  <!-- ================= PROJECTS ================= -->
+
+  <section id="projects">
+    <p class="section__text__p1">Have a look at my</p>
+    <h2 class="title">Projects</h2>
+
+    <div class="experience-details-container">
+      <div class="about-containers">
+
+        <!-- Project 1 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/CompactCoachAD.png" alt="Compact Coach project" class="project-img">
+          </div>
+          <h3 class="project-title">Compact Coach</h3>
+          <p>React Native | Expo | Tailwind</p>
+          <div class="btn-container">
+            <a href="https://github.com/nimajo/Build-Compact-Coach" target="_blank" class="btn btn-color-2">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/python.png" alt="Snake and Ladders Python project" class="project-img">
+          </div>
+          <h3 class="project-title">Refactored Snakes & Ladders Python Game with Unit Testing</h3>
+          <p>Python | Pytest</p>
+          <div class="btn-container">
+            <a href="https://github.com/nimajo/PyTest-Project-with-refactored-Pythons-and-Ladders" target="_blank" class="btn btn-color-2">GitHub</a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/PenTest.png" alt="Penetration testing lab project" class="project-img">
+          </div>
+          <h3 class="project-title">Penetration Testing Lab</h3>
+          <p>Kali Linux | Metasploit | Nessus</p>
+          <div class="btn-container">
+            <a href="https://www.linkedin.com/in/nima-jokar/details/projects/" target="_blank" class="btn btn-color-2">Read More</a>
+          </div>
+        </div>
+
+        
+
+        <!-- Portfolio Project -->
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/nimajokar.co.uk.png" alt="Portfolio website screenshot" class="project-img">
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p>HTML | CSS | JavaScript</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="showPopup()">Demo</button>
+          </div>
+
+          <div id="popup" class="popup-container">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <p>You're already using the website.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <img 
+      src="./assets/arrow.png" 
+      alt="Scroll to contact" 
+      class="icon arrow"
+      onclick="location.href='#contact'"
+    >
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h2 class="title">Contact Me</h2>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
+        <p><a href="mailto:nimajokar@hotmail.co.uk">nimajokar@hotmail.co.uk</a></p>
       </div>
 
-      <div class="btn-container">
-        <button class="btn btn-color-1" onclick="location.href='./#contact'">
-          Contact Info
-        </button>
-      </div>
-
-      <div id="socials-container">
-        <img
-          src="./assets/linkedin.png"
-          alt="My LinkedIn profile"
-          class="icon"
-          onclick="location.href='https://www.linkedin.com/in/nima-jokar/'"
-        />
-        <img
-          src="./assets/github.png"
-          alt="My GitHub profile"
-          class="icon"
-          onclick="location.href='https://github.com/nimajo'"
-        />
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/nima-jokar/" target="_blank">LinkedIn</a></p>
       </div>
     </div>
   </section>
-</div>
-        
 
+  <!-- ================= FOOTER ================= -->
 
+  <footer>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
 
+    <p>© 2024 Nima Jokar. All rights reserved.</p>
+  </footer>
 
-    <!-- About Section -->
-    <section id="about">
-      <div class="section-container">
-        <div class="row">
-          <div class="about-col-1">
-            <img src="./assets/BandW.png" />
-          </div>
-          <div class="about-col-2">
-            <p class="subtitle_p1">Learn Some More</p>
-            <h1 class="subtitle">About Me</h1>
-            <span>
-              Hey, I'm Nima, a recent BSc Computer Science graduate from the University of Hertfordshire with a steller 4.09 GPA 
-              riding the waves of tech with a first-class honours degree. Currently, I'm a Digital Forensic Analyst intern, decoding digital mysteries!
-              <br/>Beyond the lines of code, I introduce a burst of creativity and a profound love for life. Envision me as a modern tech explorer,
-               ardently immersed in the world of computer science. I am passionate about crafting innovative solutions and transforming bugs into digital masterpieces
-            </span>
+  <script src="script.js"></script>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <p class="tab-links" onclick="opentab('experience')">Experience</p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
-            </div>
-
-            <div class="tab-contents" id="experience">
-              <ul>
-                <li>
-                  <span>Digital Forensic Analyst @ Computer Forensics Lab</span>
-                  - <span> 2023-Present</span><br />Digital/Computer Forensic
-                  Analyst Intern
-                </li>
-                <li>
-                  <span
-                    >Spectator Safety Steward @ Tottenham Hotspur Stadium & Knights
-                    Group</span
-                  >
-                  - <span> 2020-Present</span><br />Event Day Steward
-                </li>
-                <li>
-                  <span
-                    >Assistant & Technician @ Manoto & Bella Restaurant</span
-                  >
-                  - <span> 2017-2019</span><br />Web Interface Designer,
-                  Hardware Technician, and Restaurant Assistant
-                </li>
-              </ul>
-            </div>
-
-            <div class="tab-contents active-tab" id="skills">
-              <ul>
-                <li>
-                  <span>UI/UX</span> | <span>HTML, CSS, Tailwind, Git</span><br />Designing
-                  Web/App Interfaces with HTML and CSS
-                </li>
-                <li>
-                  <span>Penetration Testing</span> | <span>Kali Linux, Metasploit </span
-                  ><br />Conducting Penetration Tests using Kali Linux
-                </li>
-                <li>
-                  <span
-                    >Front-End Development</span> | <span>React Native, Visual Studio Code,
-                    Git</span
-                  ><br />Front-End Development with React Native & Expo
-                </li>
-                <li>
-                  <span>Data Analysis</span> | <span>Oracle SQL, Python, PHP</span
-                  ><br />Query, Update or Modify Databases using SQL & Python
-                </li>
-                <li>
-                  <span>Information Security</span> | <span>Cybersecurity Concepts</span
-                  ><br/>NIST, CSF, and more Cybersecurity Frameworks
-                </li>
-                <li>
-                  <span>Python</span> | <span>Python, PyCharm, Jupytr</span><br />Development
-                  using Python Language
-                </li>
-                <li>
-                  <span
-                    >Computer Forensics</span> | <span>MOBILedit, FTK Imager, TinyCheck</span
-                  ><br />Imaging Devices and Completing Computer Forensic Tasks
-                </li>
-              </ul>
-            </div>
-            <div class="tab-contents" id="education">
-              <ul>
-                <li>
-                  <span>BSc Computer Science</span> - <span> 2020-2023</span
-                  ><br />Bachelor of Science with First Class Honours in
-                  Computer Science at the University of Hertfordshire
-                </li>
-                <li>
-                  <span>IBM</span> - <span> 2024</span
-                  ><br />Introduction to DevOps Certification
-                </li>
-                <li>
-                  <span>Amazon</span> - <span> 2024</span
-                  ><br />AWS Cloud Practitioner Essentials & AWS Security Fundamentals
-                </li>
-                <li>
-                  <span>Microsoft</span> - <span> 2024</span
-                  ><br />Career Essentials in Cybersecurity
-                </li>
-                <li>
-                  <span>Google Cybersecurity</span> - <span> 2023</span
-                  ><br />Foundations of Cybersecurity Certification
-                </li>
-                <li>
-                  <span>InfoSec</span> - <span> 2023</span
-                  ><br />Cyber Incident Responce Certification
-                </li>
-                
-                <li>
-                  <span>A Level</span> - <span> 2018-2020</span><br />A Levels
-                  in Mathematics, Biology, and Chemistry
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
-    </section>
-   <!-- About END -->
-
-
-
-    <!-- Projects Section --><section id="projects">
-      <p class="section__text__p1">Have a Look at my</p>
-      <h1 class="title">Projects</h1>
-
-      <div class="experience-details-container">
-
-        <div class="about-containers">
-
-
-
-          <div class="details-container color-container">
-
-            <!-- Compact Coach -->
-            <div class="article-container">
-              <img
-                src="./assets/CompactCoachAD.png"
-                alt="Compact Coach Project Image"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Compact Coach</h2>
-            <h3 class="project-subtitle-h3">React Native | JavaScript 
-              | Expo | Tailwind
-            </h3>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/nimajo/Build-Compact-Coach'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/nimajo/Build-Compact-Coach/blob/master/README.md'"
-              >
-                 Demo
-              </button>
-            </div>
-          </div>
-
-
-
-          <!-- Project 2 -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/python.png"
-                alt="Project 2"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Snake & Ladders</h2>
-            <h3 class="project-subtitle-h3">Python</h3>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/nimajo/python-snakes-ladders/'"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/nimajo/python-snakes-ladders/blob/main/README.md'"
-              >
-                 Demo
-              </button>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/PenTest.png"
-                alt="Project 3"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Penetration Test</h2>
-            <h3 class="project-subtitle-h3">Kali Linux | Metasploit | DirtyCOW | Nessus</h3>
-            <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/nima-jokar/details/projects/'"
-              >
-                Read More
-              </button>
-
-            </div>
-          </div>
-
-
-<!-- Project 4 -->
-<div class="details-container color-container">
-  
-  <div class="article-container">
-    <img
-      src="./assets/nimajokar.co.uk.png"
-      alt="Compact Coach Project Image"
-      class="project-img"
-    />
-  </div>
-  <h2 class="experience-sub-title project-title">Portfolio Website</h2>
-  <h3 class="project-subtitle-h3">HTML | CSS | JavaScript</h3>
-  <div class="btn-container">
-    <button
-      class="btn btn-color-2 project-btn"
-      onclick="location.href='https://github.com/nimajo/portfolio-website'"
-    >
-      Github
-    </button>
-    <button
-      class="btn btn-color-2 project-btn"
-      onclick="showPopup()"
-    >
-       Demo
-    </button>
-  </div>
-
-  <!-- Popup Container -->
-  <div id="popup" class="popup-container">
-    <span class="close" onclick="closePopup()">&times;</span>
-    <p> You're Already Using the Website!</p>
-  </div>
-
-</div>
-
-          
-
-
-
-
-
-
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-
-
-    
-    <!-- Contact Section -->
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:nimajokar@hotmail.co.uk">nimajokar@hotmail.co.uk</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/nima-jokar/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2024 Nima Jokar. All Rights Reserved.</p>
-    </footer>
-
-    <script src="script.js"></script>
-    
-  </body>
+</body>
 </html>

@@ -11,6 +11,15 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.section__text__p2,
+.section__text__p2p {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  white-space: normal;
+  height: auto;          /* lock height */
+  line-height: 1.3;     /* vertically center text */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -24,6 +33,10 @@ p {
 a,
 .btn {
   transition: all 300ms ease;
+    display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 /* DESKTOP NAV */
@@ -165,22 +178,35 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
   height: 80vh;
 }
 
-.section__pic-container {
-  display: flex;
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-  position: relative;
-}
+
 
 .section__text {
-  align-self: center;
+  width: 400px;      /* lock text width */
   text-align: center;
 }
+
+.section__pic-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.section__pic-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+
 
 .section__text p {
   font-weight: 600;
@@ -326,11 +352,7 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
-  height: 450px;
-  width: 450px;
-  margin: auto 0;
-}
+
 
 /* EXPERIENCE SECTION */
 
@@ -589,8 +611,8 @@ footer p {
 .typing-effect {
   overflow: hidden;
   white-space: nowrap;
-  border-right: 2px solid #000; /* Adjust the border style as needed */
-  animation: typing 3s steps(20, end);
+  border-right: 1px solid #000; /* Adjust the border style as needed */
+  animation: typing 2s steps(20, end);
 }
 
 @keyframes typing {
@@ -603,11 +625,15 @@ footer p {
 }
 
 #title-container {
-  position: relative;
+  width: 400px;        /* lock width so animation doesn't overflow */
+  height: auto;
   overflow: hidden;
-  height: 60px; /* Set a fixed height */
-  width: 550px;
+  display: flex;
+  justify-content: center;
 }
+
+
+
 
 .BgAnimation__svg {
   position: absolute;

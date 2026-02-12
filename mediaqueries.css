@@ -116,3 +116,15 @@
   }
 }
 
+@media (max-width: 768px) {
+  #profile {
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .section__pic-container {
+    width: 150px;
+    height: 150px;
+  }
+}
