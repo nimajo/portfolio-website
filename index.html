@@ -177,71 +177,146 @@
   </section>
 
   <!-- ================= PROJECTS ================= -->
+<section id="projects">
+  <p class="section__text__p1">Have a look at my</p>
+  <h2 class="title">Projects</h2>
 
-  <section id="projects">
-    <p class="section__text__p1">Have a look at my</p>
-    <h2 class="title">Projects</h2>
+  <div class="projects-grid">
 
-    <div class="experience-details-container">
-      <div class="about-containers">
+    <!-- PROJECT 1 -->
+    <div class="project-card">
+      <img src="./assets/CompactCoachAD.png" class="project-img" alt="Compact Coach">
+      <h3 class="project-text">Compact Coach</h3>
+      <p class="tech">React Native • Expo • Tailwind</p>
 
-        <!-- Project 1 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/CompactCoachAD.png" alt="Compact Coach project" class="project-img">
-          </div>
-          <h3 class="project-title">Compact Coach</h3>
-          <p>React Native | Expo | Tailwind</p>
-          <div class="btn-container">
-            <a href="https://github.com/nimajo/Build-Compact-Coach" target="_blank" class="btn btn-color-2">GitHub</a>
-          </div>
-        </div>
+      <p class="description">
+        A mobile fitness app with tracking, achievements, and social features.
+      </p>
 
-        <!-- Project 2 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/python.png" alt="Snake and Ladders Python project" class="project-img">
-          </div>
-          <h3 class="project-title">Refactored Snakes & Ladders Python Game with Unit Testing</h3>
-          <p>Python | Pytest</p>
-          <div class="btn-container">
-            <a href="https://github.com/nimajo/PyTest-Project-with-refactored-Pythons-and-Ladders" target="_blank" class="btn btn-color-2">GitHub</a>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/PenTest.png" alt="Penetration testing lab project" class="project-img">
-          </div>
-          <h3 class="project-title">Penetration Testing Lab</h3>
-          <p>Kali Linux | Metasploit | Nessus</p>
-          <div class="btn-container">
-            <a href="https://www.linkedin.com/in/nima-jokar/details/projects/" target="_blank" class="btn btn-color-2">Read More</a>
-          </div>
-        </div>
-
-        
-
-        <!-- Portfolio Project -->
-        <div class="details-container color-container">
-          <div class="article-container">
-            <img src="./assets/nimajokar.co.uk.png" alt="Portfolio website screenshot" class="project-img">
-          </div>
-          <h3 class="project-title">Portfolio Website</h3>
-          <p>HTML | CSS | JavaScript</p>
-          <div class="btn-container">
-            <button class="btn btn-color-2" onclick="showPopup()">Demo</button>
-          </div>
-
-          <div id="popup" class="popup-container">
-            <span class="close" onclick="closePopup()">&times;</span>
-            <p>You're already using the website.</p>
-          </div>
-        </div>
-
+      <div class="project-buttons">
+        <a href="https://github.com/nimajo/Build-Compact-Coach" target="_blank" class="btn btn-color-2">GitHub</a>
+        <button class="btn btn-color-2 read-more" data-project="compact-coach">More</button>
       </div>
     </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <img src="./assets/cyberriskreg.png" class="project-img" alt="Project 2">
+      <h3 class="project-text">Cyber Risk Management Dashboard (Power BI)</h3>
+      <p class="tech">Power BI • Excel • DAX</p>
+
+      <p class="description">
+        Cyber/GRC risk dashboard using Power BI and a custom Excel risk register.
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://github.com/nimajo/powerBI-risk-dashboard" target="_blank" class="btn btn-color-2">GitHub</a>
+        <button class="btn btn-color-2 read-more" data-project="cyberrisk">More</button>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 (Placeholder) -->
+    <div class="project-card">
+      <img src="./assets/pytest.png" class="project-img" alt="Project 3">
+      <h3 class="project-text">Refactired Snakes & Ladders with Unit Testing</h3>
+      <p class="tech">Python • Pytest</p>
+
+      <p class="description">
+        A python based Snakes & Ladders game, refactored and unit tested using Pytest.
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://github.com/nimajo/PyTest-Project-with-refactored-Pythons-and-Ladders" target="_blank" class="btn btn-color-2">GitHub</a>
+        <button class="btn btn-color-2 read-more" data-project="project3">More</button>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 (Placeholder) -->
+    <div class="project-card">
+      <img src="./assets/PenTest.png" class="project-img" alt="Project 4">
+      <h3 class="project-text">Kali Linux Penetration Test</h3>
+      <p class="tech">Kali Linux • Metasploit • Nmap • Nessus • OpenVAS</p>
+
+      <p class="description">
+        A hands-on system security test using Kali Linux tools.
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://www.linkedin.com/in/nima-jokar/details/projects/" target="_blank" class="btn btn-color-2">LinkedIn Projects</a>
+        <button class="btn btn-color-2 read-more" data-project="project4">More</button>
+      </div>
+    </div>
+
+    <!-- PROJECT 5 (Placeholder) -->
+    <div class="project-card">
+      <img src="./assets/MICE1.png" class="project-img" alt="Project 5">
+      <h3 class="project-text">Cinema Website Prototype</h3>
+      <p class="tech">EasyPHP • SQL • HTML/CSS • Slack</p>
+
+      <p class="description">
+        Cinema Website Prototype using EasyPHP, SQL and HTML/CSS [Group Project]
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://www.linkedin.com/in/nima-jokar/details/projects/" target="_blank" class="btn btn-color-2">LinkedIn Projects</a>
+        <button class="btn btn-color-2 read-more" data-project="project5">More</button>
+      </div>
+    </div>
+    
+        
+    <!-- PROJECT wireshark (Placeholder) -->
+    <div class="project-card">
+      <img src="./assets/wireshark.png" class="project-img" alt="Project 6">
+      <h3 class="project-text">Wireshark Network Security Analysis</h3>
+      <p class="tech">Wireshark • Network Security</p>
+
+      <p class="description">
+        Analyzed network traffic using Wireshark to identify potential security vulnerabilities and monitor network performance.
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://www.coursera.org/account/accomplishments/verify/6659KMHPN5FB" target="_blank" class="btn btn-color-2">Certificate</a>
+        <button class="btn btn-color-2 read-more" data-project="wireshark">More</button>
+      </div>
+    </div>
+
+        
+    <!-- PROJECT 7 (Placeholder) -->
+    <div class="project-card">
+      <img src="./assets/python.png" class="project-img" alt="Project 7">
+      <h3 class="project-text">Original Snakes & Ladders Game</h3>
+      <p class="tech">Python</p>
+
+      <p class="description">
+        Python Snakes & Ladders game built with turtles, featuring basic gameplay.
+      </p>
+
+      <div class="project-buttons">
+        <a href="https://github.com/nimajo/python-snakes-ladders" target="_blank" class="btn btn-color-2">GitHub</a>
+        <button class="btn btn-color-2 read-more" data-project="ogsnakes">More</button>
+      </div>
+    </div>
+
+        
+    <!-- PROJECT 8 (Placeholder) -->
+    <div class="project-card">
+      <img src="./assets/placeholder.png" class="project-img" alt="Project 8">
+      <h3 class="project-text">Project Eight</h3>
+      <p class="tech">Tech Stack • Goes • Here</p>
+
+      <p class="description">
+        Short description of the project goes here.
+      </p>
+
+      <div class="project-buttons">
+        <a href="#" target="_blank" class="btn btn-color-2">GitHub</a>
+        <button class="btn btn-color-2 read-more" data-project="project8">More</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
     <img 
       src="./assets/arrow.png" 
@@ -283,6 +358,10 @@
   </footer>
 
   <script src="script.js"></script>
+<div id="project-popup" class="popup-container">
+  <span class="close" onclick="closeProjectPopup()">&times;</span>
+  <div id="popup-content"></div>
+</div>
 
 </body>
 </html>
