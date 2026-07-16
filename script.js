@@ -54,6 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!titleElement) return;
 
   const titles = [
+    "IT Analyst",
     "Experienced Data Analyst",
     "First Class Computer Science Graduate",
     "Tech Enthusiast",
